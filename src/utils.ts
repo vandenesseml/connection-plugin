@@ -5,7 +5,7 @@ function toTrainCase(str: string) {
     return str.toLowerCase().replace(/ /g, '-');
 }
 
-export function defaultPath(points: number[], curvature: number) {
+export function defaultPath(points: number[], _curvature: number) {
     const [x1, y1, x2, y2] = points;
     const hx1 = Math.abs((x2 + x1) / 2);
     const hx2 = Math.abs((x2 + x1) / 2);
